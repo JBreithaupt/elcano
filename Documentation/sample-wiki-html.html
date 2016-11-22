@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="client-nojs">
+<head>
+<meta charset="UTF-8"/>
+<title>Elcano Project Wiki - Elcano Project Wiki</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Elcano_Project_Wiki","wgTitle":"Elcano Project Wiki","wgCurRevisionId":25,"wgRevisionId":25,"wgArticleId":1,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":"Joe","wgUserGroups":["bureaucrat","sysop","*","user","autoconfirmed"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Elcano_Project_Wiki","wgRelevantArticleId":1,"wgRequestId":"5f561982f04f7b12313c305a","wgUserId":1,"wgUserEditCount":25,"wgUserRegistration":1479432819000,"wgUserNewMsgRevisionId":null,"wgIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[]});mw.loader.implement("user.options",function($,jQuery,require,module){mw.user.options.set([]);});mw.loader.implement("user.tokens",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"821b42c073e164365e450c85d5ef5b4f58339612+\\","patrolToken":"b0b605e703f1466fb26476f8229d242a58339612+\\","watchToken":"34997da4addaa5fc6765bccae83f542558339612+\\","csrfToken":"821b42c073e164365e450c85d5ef5b4f58339612+\\"});/*@nomin*/;
+
+});mw.loader.load(["mediawiki.page.startup","skins.vector.js"]);});</script>
+<link rel="stylesheet" href="/load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<script async="" src="/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="generator" content="MediaWiki 1.27.1"/>
+<link rel="alternate" type="application/x-wiki" title="Edit" href="/index.php?title=Elcano_Project_Wiki&amp;action=edit"/>
+<link rel="edit" title="Edit" href="/index.php?title=Elcano_Project_Wiki&amp;action=edit"/>
+<link rel="shortcut icon" href="/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/opensearch_desc.php" title="Elcano Project Wiki (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="http://127.0.0.1:8080/api.php?action=rsd"/>
+<link rel="alternate" type="application/atom+xml" title="Elcano Project Wiki Atom feed" href="/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+</head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-Elcano_Project_Wiki rootpage-Elcano_Project_Wiki skin-vector action-view">
+		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+
+						<div class="mw-indicators">
+</div>
+			<h1 id="firstHeading" class="firstHeading" lang="en">Elcano Project Wiki</h1>
+									<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub">From Elcano Project Wiki</div>
+								<div id="contentSub"></div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="#mw-head">navigation</a>, 					<a href="#p-search">search</a>
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><p>The Elcano Project aims to make self-drive real for students and hobbyists by developing low-cost hardware and software kits to convert any vehicle to self-drive. Elcano uses recumbent tricycles as a test bed. Finished Elcano tricycles can carry a person and cost under 5000 USD. Elcano kits could also be used in full-sized cars or in toy remote-controlled cars. The <a rel="nofollow" class="external text" href="http://http://www.elcanoproject.org/">ElcanoProject.Org</a> homepage outlines the project's greater purpose and goals.
+</p>
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#System_Hardware"><span class="tocnumber">1</span> <span class="toctext">System Hardware</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#Trike_Architecture_Overview"><span class="tocnumber">1.1</span> <span class="toctext">Trike Architecture Overview</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#Actuators"><span class="tocnumber">1.2</span> <span class="toctext">Actuators</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#Sensors"><span class="tocnumber">1.3</span> <span class="toctext">Sensors</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#Processors"><span class="tocnumber">1.4</span> <span class="toctext">Processors</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#Media_storage_.2F_Input_files"><span class="tocnumber">1.5</span> <span class="toctext">Media storage / Input files</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#Wiring_.2F_connectors"><span class="tocnumber">1.6</span> <span class="toctext">Wiring / connectors</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="#Radio_and_manual_Controllers"><span class="tocnumber">1.7</span> <span class="toctext">Radio and manual Controllers</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="#Enclosures.2C_trays"><span class="tocnumber">1.8</span> <span class="toctext">Enclosures, trays</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-10"><a href="#System_Software"><span class="tocnumber">2</span> <span class="toctext">System Software</span></a></li>
+<li class="toclevel-1 tocsection-11"><a href="#Getting_Started"><span class="tocnumber">3</span> <span class="toctext">Getting Started</span></a></li>
+<li class="toclevel-1 tocsection-12"><a href="#News.2C_Accolades.2C_Testimonials"><span class="tocnumber">4</span> <span class="toctext">News, Accolades, Testimonials</span></a></li>
+<li class="toclevel-1 tocsection-13"><a href="#Administrating_a_Wiki"><span class="tocnumber">5</span> <span class="toctext">Administrating a Wiki</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="System_Hardware">System Hardware</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=Elcano_Project_Wiki&amp;action=edit&amp;section=1" title="Edit section: System Hardware">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The Elcano team has two self-driving tricycles for development and demonstration. The Elcano team purchased consumer recumbent tadpole tricycles and customized each trike to drive itself using technology outlined in this guide.
+</p>
+<h3><span class="mw-headline" id="Trike_Architecture_Overview">Trike Architecture Overview</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=Elcano_Project_Wiki&amp;action=edit&amp;section=2" title="Edit section: Trike Architecture Overview">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p><b>Low-level control</b> directly controls how the vehicle moves. These are the motors and computers that control steering, braking, and throttle. Each Elcano tricycle uses different low-level configurations.
+<a href="/index.php/File:Trike-low-level-arch.jpg" class="image"><img alt="Trike-low-level-arch.jpg" src="/images/f/fe/Trike-low-level-arch.jpg" width="616" height="797" /></a>
+</p><p><b>High-level control</b> makes decisions about where the vehicle should go. High-level control is not vehicle specific: each Elcano tricycle shares a high-level control configuration.
+<a href="/index.php/File:Trike-high-level-arch.jpg" class="image"><img alt="Trike-high-level-arch.jpg" src="/images/7/72/Trike-high-level-arch.jpg" width="616" height="797" /></a>
+</p>
+<h3><span class="mw-headline" id="Actuators">Actuators</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=Elcano_Project_Wiki&amp;action=edit&amp;section=3" title="Edit section: Actuators">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p><i>Go to page <a href="/index.php/A1" title="A1"> A1: Traction Motor</a></i>
+</p><p><b>A1 – Traction Motor</b>
+The A1 motor turns the drive wheel. <a href="/index.php?title=C1&amp;action=edit&amp;redlink=1" class="new" title="C1 (page does not exist)">C1</a> controls the speed of A1. Depending on motor design, A1 may generate a motor speed feedback signal. Depending on the hub motor controller design, C1 may directly receive this feedback from A1 to determine how fast the wheel turns. If A1 has motor speed feedback but C1 is not connected to the feedback signal, <a href="/index.php?title=C2&amp;action=edit&amp;redlink=1" class="new" title="C2 (page does not exist)">C2</a> could receive the motor speed feedback to determine wheel speed and adjust control signals sent to C1.
+</p><p><i>Go to page <a href="/index.php/A2" title="A2"> A2: Braking Motor</a></i>
+</p><p><b>A2 – Brake motor</b>
+A2 is attached to the brakes and receives braking input from <a href="/index.php?title=C2&amp;action=edit&amp;redlink=1" class="new" title="C2 (page does not exist)">C2</a>. Elcano currently uses a linear servo to control the position of disk brake calipers on the front wheels. C2 controls position of A2 using a PWM signal.
+</p><p><i>Go to page <a href="/index.php/A3" title="A3"> A3: Steering Motor</a></i>
+</p><p><b>A3 – Steering motor</b>
+A3 is attached to the steering and receives steering input from <a href="/index.php?title=C2&amp;action=edit&amp;redlink=1" class="new" title="C2 (page does not exist)">C2</a>. Elcano currently uses a linear servo to control the position of the front wheels. C2 controls position of A3 using a PWM signal.
+</p>
+<h3><span class="mw-headline" id="Sensors">Sensors</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=Elcano_Project_Wiki&amp;action=edit&amp;section=4" title="Edit section: Sensors">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<pre>a. S1 – Odometer
+i. S1 documentation
+ii. related code links
+b. S2 – Wheel angle
+i. documentation
+ii. code
+c. S3 – Compass
+i. documentation
+ii. code 
+d. S4 – Smart Camera
+e. S5 – target speeds, steering angle
+f. S7 – GPS
+g. S8 – Landmark recognition
+h. S9 – IMU 
+i. S10 – brake feedback
+j.&#160;? – optical speed (mouse)
+k. S11 – sonar
+</pre>
+<h3><span class="mw-headline" id="Processors">Processors</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=Elcano_Project_Wiki&amp;action=edit&amp;section=5" title="Edit section: Processors">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<pre>a. C1 – Hub motor controller
+i. C1 documentation
+ii. related code links
+b. C2 – Dual control: low level vehicle control, either from the driver or the AI.
+i. Documentation
+</pre>
+<p>C2 is the low-level controller that sends control signals to the hub motor,
+brake servo, and steering servo.  It is a PID controller, but
+may also impose limits on control values for the motor and servos as a safety
+measure to protect against incorrect PID settings.
+</p><p>It receives desired speed and heading from either of two sources, an RC
+controller operated by a person, or the C3 pilot module.  These are mutually
+exclusive.
+</p><p>RC commands are received directly as interrupts on a bank of pins.  C3 commands
+are received over a serial line using the Elcano Serial protocol.  Heading and
+speed commands do not need to be passed through to other modules, but because
+the Elcano Serial protocol uses a unidirectional ring structure, C2 may need to
+pass through *other* commands that come from C3 but are intended for modules
+past C2 on the ring.
+</p><p>Elcano #1 Servo range is 50 mm for brake, 100 mm for steering.
+</p><p>Elcano servo has a hardware controller that moves to a
+particular position based on an input PWM signal from Arduino.
+The Arduino PWM signal is a square wave at a base frequency of 490 Hz or 2.04 ms.
+PWM changes the duty cycle to encode   
+0 is always off; 255 always on. One step is 7.92 us.
+</p><p>Elcano servo is fully retracted on a pulse width of 2 ms;
+fully extended at 1 ms and centered at 1.5 ms.
+There is a deadband of 8 us.
+At 12v, servo operating speed is 56mm/s with no load or
+35 mm/s at maximum load.
+</p><p><br />
+</p>
+<pre>ii. code
+c. C3 – Pilot: Finds path around obstacles and feeds next path settings to C2.
+i. Documentation
+</pre>
+<p>The Pilot program reads a serial line that specifies the desired path and speed of the vehicle. It computes the analog signals to control the throttle, brakes and steering and sends these to C2. Input will be received and sent using Elcano_Serial. Inputs will be received fromC5(sensors) and C4(planner). Output is sent to C2 (Low Level). In USARSIM simulation, these could be written on the serial line as wheel spin speeds and steering angles needed to follow the planned path. This would take the form of a DRIVE command to the C1 module over a serial line. The format of the DRIVE command is documented in the C1 code.
+</p>
+<pre>ii. code
+d. C4 – Path Planner: Computes the best route from current location to destination.
+e. C5 – Obstacle detector
+f. C6 – Navigator: Reads GPS, INU, Odometer, etc. to get best position estimate.
+g. C7 – Vision: Locates certain features of interest.
+h. C8 – Simulator interface: Replaces sensor inputs with outputs of PC simulator.
+</pre>
+<h3><span class="mw-headline" id="Media_storage_.2F_Input_files">Media storage / Input files</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=Elcano_Project_Wiki&amp;action=edit&amp;section=6" title="Edit section: Media storage / Input files">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<h3><span class="mw-headline" id="Wiring_.2F_connectors">Wiring / connectors</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=Elcano_Project_Wiki&amp;action=edit&amp;section=7" title="Edit section: Wiring / connectors">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<pre>a. Power wiring
+b. Servo wiring
+</pre>
+<p>Output from hardware servo controller to either servo has five wires, with observed behavior of:
+White: 0V
+Yellow: 5V
+Blue: 0-5V depending on position of servo.
+Black: 12V while servo extends; 0V at rest or retracting.
+Red:   12V while retracting; 0V at rest or extending.
+The reading on the Blue line has hysteresis when Elcano sends a PWM signal; 
+there appear to be different (PWM, position) pairs when retracting or extending.
+Motor speed is probably controlled by the current on the red or black line.   
+</p>
+<pre>c. other connectors, pinouts
+</pre>
+<h3><span class="mw-headline" id="Radio_and_manual_Controllers">Radio and manual Controllers</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=Elcano_Project_Wiki&amp;action=edit&amp;section=8" title="Edit section: Radio and manual Controllers">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<h3><span class="mw-headline" id="Enclosures.2C_trays">Enclosures, trays</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=Elcano_Project_Wiki&amp;action=edit&amp;section=9" title="Edit section: Enclosures, trays">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<h2><span class="mw-headline" id="System_Software">System Software</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=Elcano_Project_Wiki&amp;action=edit&amp;section=10" title="Edit section: System Software">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<pre>I. Main communication paths
+a. main information flow
+b. interrupts, input
+II. Serial Commands
+III. GPS
+IV. Static Map
+</pre>
+<h2><span class="mw-headline" id="Getting_Started">Getting Started</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=Elcano_Project_Wiki&amp;action=edit&amp;section=11" title="Edit section: Getting Started">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<pre>I. Bills/List of Materials 
+II. Software development tools
+III. Slack, Kerika
+IV. Videos
+V. Tutorials
+</pre>
+<h2><span class="mw-headline" id="News.2C_Accolades.2C_Testimonials">News, Accolades, Testimonials</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=Elcano_Project_Wiki&amp;action=edit&amp;section=12" title="Edit section: News, Accolades, Testimonials">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<h2><span class="mw-headline" id="Administrating_a_Wiki">Administrating a Wiki</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=Elcano_Project_Wiki&amp;action=edit&amp;section=13" title="Edit section: Administrating a Wiki">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p><strong>MediaWiki has been installed.</strong>
+</p><p>Consult the <a rel="nofollow" class="external text" href="//meta.wikimedia.org/wiki/Help:Contents">User's Guide</a> for information on using the wiki software.
+</p>
+<ul><li> <a class="external text" href="//www.mediawiki.org/wiki/Special:MyLanguage/Manual:Configuration_settings">Configuration settings list</a></li>
+<li> <a class="external text" href="//www.mediawiki.org/wiki/Special:MyLanguage/Manual:FAQ">MediaWiki FAQ</a></li>
+<li> <a rel="nofollow" class="external text" href="https://lists.wikimedia.org/mailman/listinfo/mediawiki-announce">MediaWiki release mailing list</a></li>
+<li> <a class="external text" href="//www.mediawiki.org/wiki/Special:MyLanguage/Localisation#Translation_resources">Localise MediaWiki for your language</a></li>
+<li> <a class="external text" href="//www.mediawiki.org/wiki/Special:MyLanguage/Manual:Combating_spam">Learn how to combat spam on your wiki</a></li></ul>
+
+<!-- 
+NewPP limit report
+Cached time: 20161122004922
+Cache expiry: 86400
+Dynamic content: false
+Real time usage: 0.053 seconds
+Preprocessor visited node count: 51/1000000
+Preprocessor generated node count: 56/1000000
+Post‐expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+-->
+
+<!-- 
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    0.000      1 - -total
+-->
+
+<!-- Saved in parser cache with key JB_elcano_wiki:pcache:idhash:1-0!*!0!!en!5!* and timestamp 20161122004922 and revision id 25
+ -->
+</div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="http://127.0.0.1:8080/index.php?title=Elcano_Project_Wiki&amp;oldid=25">http://127.0.0.1:8080/index.php?title=Elcano_Project_Wiki&amp;oldid=25</a>"					</div>
+				<div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-userpage"><a href="/index.php/User:Joe" class="new" dir="auto" title="Your user page [.]" accesskey=".">Joe</a></li><li id="pt-mytalk"><a href="/index.php/User_talk:Joe" class="new" title="Your talk page [n]" accesskey="n">Talk</a></li><li id="pt-preferences"><a href="/index.php/Special:Preferences" title="Your preferences">Preferences</a></li><li id="pt-watchlist"><a href="/index.php/Special:Watchlist" title="A list of pages you are monitoring for changes [l]" accesskey="l">Watchlist</a></li><li id="pt-mycontris"><a href="/index.php/Special:Contributions/Joe" title="A list of your contributions [y]" accesskey="y">Contributions</a></li><li id="pt-logout"><a href="/index.php?title=Special:UserLogout&amp;returnto=Elcano+Project+Wiki" title="Log out">Log out</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+															<li  id="ca-nstab-main" class="selected"><span><a href="/index.php/Elcano_Project_Wiki"  title="View the content page [c]" accesskey="c">Page</a></span></li>
+															<li  id="ca-talk" class="new"><span><a href="/index.php?title=Talk:Elcano_Project_Wiki&amp;action=edit&amp;redlink=1"  title="Discussion about the content page [t]" accesskey="t" rel="discussion">Discussion</a></span></li>
+													</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span><a href="#"></a>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+															<li id="ca-view" class="selected"><span><a href="/index.php/Elcano_Project_Wiki" >Read</a></span></li>
+															<li id="ca-edit"><span><a href="/index.php?title=Elcano_Project_Wiki&amp;action=edit"  title="Edit this page [e]" accesskey="e">Edit</a></span></li>
+															<li id="ca-history" class="collapsible"><span><a href="/index.php?title=Elcano_Project_Wiki&amp;action=history"  title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+															<li id="ca-unwatch" class="icon mw-watchlink"><span><a href="/index.php?title=Elcano_Project_Wiki&amp;action=unwatch"  title="Remove this page from your watchlist [w]" accesskey="w">Unwatch</a></span></li>
+													</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span><a href="#"></a></h3>
+
+						<div class="menu">
+							<ul>
+																	<li id="ca-delete">
+										<a href="/index.php?title=Elcano_Project_Wiki&amp;action=delete"  title="Delete this page [d]" accesskey="d">Delete</a>
+									</li>
+																	<li id="ca-move">
+										<a href="/index.php/Special:MovePage/Elcano_Project_Wiki"  title="Move this page [m]" accesskey="m">Move</a>
+									</li>
+																	<li id="ca-protect">
+										<a href="/index.php?title=Elcano_Project_Wiki&amp;action=protect"  title="Protect this page [=]" accesskey="=">Protect</a>
+									</li>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search" title="Search Elcano Project Wiki [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/index.php/Main_Page"  title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id='p-navigation' aria-labelledby='p-navigation-label'>
+			<h3 id='p-navigation-label'>Navigation</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-mainpage-description"><a href="/index.php/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-recentchanges"><a href="/index.php/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-randompage"><a href="/index.php/Special:Random" title="Load a random page [x]" accesskey="x">Random page</a></li><li id="n-help"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Contents" title="The place to find out">Help</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+			<h3 id='p-tb-label'>Tools</h3>
+
+			<div class="body">
+									<ul>
+						<li id="t-whatlinkshere"><a href="/index.php/Special:WhatLinksHere/Elcano_Project_Wiki" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/index.php/Special:RecentChangesLinked/Elcano_Project_Wiki" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="/index.php/Special:Upload" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="/index.php/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-print"><a href="/index.php?title=Elcano_Project_Wiki&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li><li id="t-permalink"><a href="/index.php?title=Elcano_Project_Wiki&amp;oldid=25" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/index.php?title=Elcano_Project_Wiki&amp;action=info" title="More information about this page">Page information</a></li>					</ul>
+							</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last modified on 22 November 2016, at 01:33.</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="/index.php/Elcano_Project_Wiki:Privacy_policy" title="Elcano Project Wiki:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="/index.php/Elcano_Project_Wiki:About" title="Elcano Project Wiki:About">About Elcano Project Wiki</a></li>
+											<li id="footer-places-disclaimer"><a href="/index.php/Elcano_Project_Wiki:General_disclaimer" title="Elcano Project Wiki:General disclaimer">Disclaimers</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+											<li id="footer-poweredbyico">
+							<a href="//www.mediawiki.org/"><img src="/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>						</li>
+									</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.loader.state({"user":"ready","user.groups":"ready"});mw.loader.load(["mediawiki.toc","mediawiki.action.view.postEdit","site","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","mediawiki.page.watch.ajax"]);});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":350});});</script>
+	</body>
+</html>
